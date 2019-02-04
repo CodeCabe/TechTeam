@@ -131,7 +131,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 120px 0;
+    padding: 60px 0;/*Line Modify padding 120px to 60px*/
 }
 
 .social-menu {
@@ -227,6 +227,7 @@ input:-webkit-autofill:focus {
 .page-title h2 {
     text-transform: uppercase;
     position: relative;
+    text-align: center;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -265,7 +266,8 @@ input:-webkit-autofill:focus {
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     -webkit-transform: translateY(-5px);
-    transform: translateY(-5px)
+    transform: translateY(-5px);
+
 }
 
 .box h4 {
@@ -987,12 +989,10 @@ preloader
     }
 }
 
-/*Add Code*/
-/* .about{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
+/*======================================
+//--//-->   Add Code
+======================================*/
+
 .space{
     padding-top:20px;
 }
@@ -1010,15 +1010,6 @@ preloader
     text-align: center;
     transition: all .5s ease;
 }
-/*-- agileits --*/
-/* p.fgd {
-padding-bottom: 30px;
-font-size: 14px;
-color: #777;
-line-height: 26px;
-text-align: justify;
-} */
-
 .service-content{
     position: absolute;
     top: 0px;
@@ -1077,8 +1068,7 @@ text-align: justify;
 }
 .yellow{background-color: #138fc2;} /*Chage color #ffc000 to #138fc2*/
 .orange{background-color: #095c7d;} /*Change color fc7f0c to #095c7d*/
-.red{background-color: #e84b3a;}
-.grey{background-color: #474747;}
+
 .service-box:hover .service-icon{
     opacity: 0;
     -webkit-transform: translateY(-110px) rotateX(90deg);
@@ -1095,62 +1085,77 @@ text-align: justify;
     -o-transform: rotateX(0);
     transform: rotateX(0);
 }
-.serviceBox{
-    padding: 0 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    margin: 50px 0;
-    position: relative;
-    transition: all 0.3s linear 0s;
+
+/* .box-bottom {
+    background: #68A4C4;
 }
-section.services {
-    padding: 80px 0px;
-    background: #f3f3f3;
+.box-bottom {
+    padding: 0px 0;
+} */
+.box :hover .s-tittle{
+    color:#138fc2;
 }
-.serviceBox .service-icon{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    line-height: 45px;
-    border-radius: 5px;
-    background: #4ca8e8;
-    font-size: 30px;
-    color: #fff;
-    margin: -45px 0 30px;
-    position: relative;
-    transition: all 0.3s linear 0s;
+.btncenter{
+    color: #ffff;
+    margin-left: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius:50px;
+    border:1px solid transparent;
+    border:none
+
 }
 
-.serviceBox:hover .service-icon{
-    background: #dcdcdc;
-    color: #4ca8e8;
+.btncenter:hover {
+    background-color:  #138fc2;
 }
-.serviceBox .service-icon:after{
-    content: "";
-    border-top: 10px solid #4ca8e8;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s linear 0s;
+.plus{
+    background-color:  #ffff;
 }
-.serviceBox:hover .service-icon:after{
-    border-top-color: #dcdcdc;
+.btncenter:hover .ftw .plus {
+    background-color:  #ffff;
 }
 
-.serviceBox .title{
-    font-size: 20px;
-    color: #414141;
-    margin: 0 0 12px 0;
-    transition: all 0.3s ease 0s;
+/*Footer*/
+footer.about{
+    background-color:#138fc2"
 }
-.serviceBox:hover .title{
-    color: #4ca8e8;
+footer p{
+    color:#ffff;
 }
-.serviceBox .description {
-    font-size: 14px;
-    color: #8e8e8e;
-    line-height: 25px;
+  /*Paragrafo*/
+
+  .s-description
+  {
+      -webkit-animation-duration: 3s;
+      text-align: justify;
+      padding-left: 5px;
+      padding-right:5px;
+  }
+
+  .workflow {
+    background: url('images/workflow.jpg') no-repeat scroll center top / cover
+    }
+
+/*Color*/
+
+.t{
+    color: #095c7d;
+}
+.e{
+    color: #138fc2;
+}
+
+.tech{
+    list-style: none;
+
+}
+.tech li {
+    float:left;
+}
+.team{
+    list-style: none;
+}
+.team li {
+    float:left;
 }
